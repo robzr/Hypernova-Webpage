@@ -1,5 +1,9 @@
 # Hypernova Landing Page
 
+## Basic Customization
+
+At the top of `./assets/js/main.js`, adjust the title and URLs in the config section.
+
 ## External Scripts
 - [Bootstrap](https://getbootstrap.com/)
 - [JQuery](https://jquery.com/)

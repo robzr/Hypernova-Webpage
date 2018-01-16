@@ -33,11 +33,11 @@ function updatePageData() {
 	document.getElementById("splash-link-requests").href = config.url.requests_url;
 	document.getElementById("splash-link-plex").href = config.url.plex_url;
 	document.getElementById("splash-link-tautulli").href = config.url.tautulli_url;
-	//Update advanced block links
+	//Update automation software blocks [Row 1]
 	document.getElementById("splash-link-sonarr").href = config.url.sonarr_url;
 	document.getElementById("splash-link-radarr").href = config.url.radarr_url;
 	document.getElementById("splash-link-sabnzbd").href = config.url.sabnzbd_url;
-
+	//Update automation software blocks [Row 2]
 	document.getElementById("splash-link-bittorrent").href = config.url.bittorrent_url;
 	document.getElementById("splash-link-tvheadend").href = config.url.tvheadend_url;
 	document.getElementById("splash-link-netdata").href = config.url.netdata_url;
