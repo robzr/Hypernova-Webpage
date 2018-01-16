@@ -5,7 +5,7 @@ var config = {
 		status_enabled: true
 	},
 	status: {
-		url: "https://SERVER_URL",
+		url: "http://DIRECT_PLEX_SERVER_URL:32400/web/index.html",
 		movies_num: "1200+",
 		tv_num: "200+",
 		anime_num: "50+",
@@ -51,10 +51,26 @@ function updatePageData() {
 	document.getElementById("splash-link-netdata").href = config.url.netdata_url;
 	//Update or remove the status section
 	if(config.general.status_enabled) {
+		//Update the amount of media
 		document.getElementById("status-text-movies-state").innerHTML += config.status.movies_num;
 		document.getElementById("status-text-tv-state").innerHTML += config.status.tv_num;
 		document.getElementById("status-text-anime-state").innerHTML += config.status.anime_num;
 		document.getElementById("status-text-music-state").innerHTML += config.status.music_num;
+		//Update the current state of the server
+		server_state = document.getElementById("status-text-status-state");
+		$.ajax({
+			url: config.status.url,
+			timeout: 200,
+			type: "GET",
+			success: function(result) {
+				server_state.innerHTML += "ONLINE";
+				server_state.style.color = "#00ff40";
+			},
+			error: function(error) {
+				server_state.innerHTML += "OFFLINE";
+				server_state.style.color = "#ff0000";
+			}
+		});
 	} else {
 		document.getElementById("status").style.display = "none";
 	}
@@ -62,10 +78,8 @@ function updatePageData() {
 
 function animate() {
 	window.sr = ScrollReveal({duration: 500});
-	sr.reveal('.header');
-	sr.reveal('.col-md-3');
-	sr.reveal('.col-md-12');
-	sr.reveal('.col-md-4');
+	sr.reveal('.animate', 50);
+	sr.reveal('.animate-header');
 }
 
 animate();

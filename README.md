@@ -4,6 +4,13 @@
 
 At the top of `./assets/js/main.js`, adjust the title and URLs in the config section.
 
+### Server Status URL
+
+The URL must be the **entire** URL that is returned when loading Plex from an external network, not through plex.tv. For example, if a Plex server is hosted at IP `1.1.1.1` or at URL `test.com`, the input would be valid and invalid:
+
+`1.1.1.1:32400/web/index.html` or `test.com:32400/web/index.html` are CORRECT.
+`1.1.1.1:32400` or `test.com:32400` are INCORRECT.
+
 ## External Scripts
 - [Bootstrap](https://getbootstrap.com/)
 - [JQuery](https://jquery.com/)
