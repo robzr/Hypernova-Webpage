@@ -14,91 +14,137 @@
 	<link rel="stylesheet" href="assets/css/general.css">
 	<link rel="stylesheet" href="assets/css/header.css">
 	<link rel="stylesheet" href="assets/css/splash.css">
+	<link rel="stylesheet" href="assets/css/status.css">
 </head>
 <body onload="updatePageData();">
 	<div id="main" class="container">
-		<!-- Server header -->
-		<div class="container header text-center" id="top-header">
-			<hr>
-			<p class="headers-text"><img class="headers-logo" src="assets/img/header/logo.png"><b id="header-title">&nbsp;</b></p>
-			<hr>
-		</div>
-		<!-- Splash -->
-		<div class="container splash">
-			<div class="row">
-				<div class="col-md-4">
-					<a id="splash-link-plex" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/plex.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-requests" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/requests.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-tautulli" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/tautulli.jpg">
-						</div>
-					</a>
+		<!-- Server Section -->
+		<div id="header">
+			<!-- Server header -->
+			<div class="container header text-center" id="top-header">
+				<hr>
+				<p class="headers-text"><img class="headers-logo" src="assets/img/header/logo.png"><b id="header-title">&nbsp;</b></p>
+				<hr>
+			</div>
+			<!-- Splash -->
+			<div class="container splash">
+				<div class="row">
+					<div class="col-md-4">
+						<a id="splash-link-plex" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/plex.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-requests" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/requests.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-tautulli" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/tautulli.jpg">
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Advanced header -->
-		<div class="container header text-center">
-			<hr>
-			<p class="headers-text"><img class="headers-logo" src="assets/img/header/advanced.png"><b>&nbsp;Advanced</b></p>
-			<hr>
+		<!-- Status Section -->
+		<div id="status">
+			<!-- Status header -->
+			<div class="container header text-center">
+				<hr>
+				<p class="headers-text"><img class="headers-logo" src="assets/img/header/status.png"><b>&nbsp;Status</b></p>
+				<hr>
+			</div>
+			<!-- Status -->
+			<div class="container splash text-center">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="splash-block">
+							<p class="status-text" id="status-text-status">SERVER STATUS:<b id="status-text-status-state"><br>ONLINE</b></p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="splash-block">
+							<p class="status-text" id="status-text-movies">MOVIES:<br><b id="status-text-movies-state"></b></p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="splash-block">
+							<p class="status-text" id="status-text-tv">TV SHOWS:<br><b id="status-text-tv-state"></b></p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="splash-block">
+							<p class="status-text" id="status-text-anime">ANIME:<br><b id="status-text-anime-state"></b></p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="splash-block">
+							<p class="status-text" id="status-text-music">MUSIC:<br><b id="status-text-music-state"></b></p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!-- Splash -->
-		<div class="container splash">
-			<div class="row">
-				<div class="col-md-4">
-					<a id="splash-link-sonarr" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/sonarr.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-radarr" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/radarr.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-sabnzbd" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/sabnzbd.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-bittorrent" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/bittorrent.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-tvheadend" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/tvheadend.jpg">
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a id="splash-link-netdata" href="#">
-						<div class="splash-block">
-							<img class="splash-block-image" src="assets/img/splash/netdata.jpg">
-						</div>
-					</a>
+		<!-- Advanced Section -->
+		<div id="advanced">
+			<!-- Advanced header -->
+			<div class="container header text-center">
+				<hr>
+				<p class="headers-text"><img class="headers-logo" src="assets/img/header/advanced.png"><b>&nbsp;Advanced</b></p>
+				<hr>
+			</div>
+			<!-- Advanced -->
+			<div class="container splash">
+				<div class="row">
+					<div class="col-md-4">
+						<a id="splash-link-sonarr" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/sonarr.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-radarr" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/radarr.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-sabnzbd" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/sabnzbd.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-bittorrent" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/bittorrent.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-tvheadend" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/tvheadend.jpg">
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a id="splash-link-netdata" href="#">
+							<div class="splash-block">
+								<img class="splash-block-image" src="assets/img/splash/netdata.jpg">
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
