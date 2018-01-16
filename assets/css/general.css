@@ -1,0 +1,16 @@
+body {
+	background-color: #282a2d;
+	font-family: 'Lato', sans-serif;
+}
+
+#main {
+	min-height: 100vh;
+	background-color: #3f4245;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width: 767px) {
+	#main {
+		padding: 0;
+	}
+}

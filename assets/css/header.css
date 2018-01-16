@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Disolve';
+	src: url(../fonts/disolve.ttf);
+}
+
+hr {
+	border-color: white;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#top-header {
+	padding-top: 30px;
+}
+
+.headers-logo {
+	height: 75px;
+	margin-top: -15px;
+}
+
+.headers-text {
+	color: white;
+	font-size: 72px;
+	font-weight: 100;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	line-height: 75px;
+}
+
+.headers-text > b {
+	font-weight: 100;
+}
+
+@media(max-width: 767px) {
+	#top-header {
+		padding-top: 15px;
+	}
+
+	.headers-logo {
+		height: auto;
+		width: 35%;
+		margin-top: 0px;
+	}
+
+	.headers-text > b {
+		display: none;
+	}
+
+	hr {
+		width: 100%;
+	}
+}

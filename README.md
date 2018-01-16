@@ -1,6 +1,12 @@
 # Hypernova Landing Page
 
 ## External Scripts
-- [JQuery &mdash; v3.2.1](https://jquery.com/)
-- [Popper.JS &mdash; v1.12.9](https://popper.js.org/)
-- [Bootstrap &mdash; v4.0.0b3](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [JQuery](https://jquery.com/)
+- [Popper.JS](https://popper.js.org/)
+- [Scroll Reveal](https://github.com/jlmakes/scrollreveal)
+
+## Images Used
+- Any logos are taken from their respective sites
+- The icon/logo for Hypernova is taken from [here](https://twitter.com/hypernovaserver)
+  - (An attempt was made to contact the Twitter account, with no response. If there is ever an issue with the use with the logo, please let me know!)

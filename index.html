@@ -7,21 +7,107 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="theme-color" content="#3f4245">
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/general.css">
+	<link rel="stylesheet" href="assets/css/header.css">
+	<link rel="stylesheet" href="assets/css/splash.css">
 </head>
 <body onload="updatePageData();">
-	<div id="splash">
-		<a id="splash-requests">Requests</a>
-		<a id="splash-plex">Plex</a>
-		<a id="splash-status">Status</a>
+	<div id="main" class="container">
+		<!-- Server header -->
+		<div class="container header text-center" id="top-header">
+			<hr>
+			<p class="headers-text"><img class="headers-logo" src="assets/img/header/logo.png"><b id="header-title">&nbsp;</b></p>
+			<hr>
+		</div>
+		<!-- Splash -->
+		<div class="container splash">
+			<div class="row">
+				<div class="col-md-4">
+					<a id="splash-link-plex" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/plex.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-requests" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/requests.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-tautulli" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/tautulli.jpg">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Advanced header -->
+		<div class="container header text-center">
+			<hr>
+			<p class="headers-text"><img class="headers-logo" src="assets/img/header/advanced.png"><b>&nbsp;Advanced</b></p>
+			<hr>
+		</div>
+		<!-- Splash -->
+		<div class="container splash">
+			<div class="row">
+				<div class="col-md-4">
+					<a id="splash-link-sonarr" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/sonarr.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-radarr" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/radarr.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-sabnzbd" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/sabnzbd.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-bittorrent" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/bittorrent.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-tvheadend" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/tvheadend.jpg">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a id="splash-link-netdata" href="#">
+						<div class="splash-block">
+							<img class="splash-block-image" src="assets/img/splash/netdata.jpg">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
