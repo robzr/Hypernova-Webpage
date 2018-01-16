@@ -1,5 +1,7 @@
 # Hypernova Landing Page
 
+<img src="https://i.imgur.com/PGYf67C.png" width="100%">
+
 ## Basic Customization
 
 At the top of `./assets/js/main.js`, adjust the title and URLs in the config section.
