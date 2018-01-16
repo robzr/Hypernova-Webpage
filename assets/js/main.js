@@ -45,8 +45,8 @@ function updatePageData() {
 
 function animate() {
 	window.sr = ScrollReveal({duration: 500});
-	sr.reveal('.header',200);
-	sr.reveal('.col-md-4', 75);
+	sr.reveal('.header');
+	sr.reveal('.col-md-4');
 }
 
 animate();
