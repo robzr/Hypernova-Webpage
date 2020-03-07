@@ -19,7 +19,7 @@ var config = {
 		//Automation software blocks [Row 1]
 		sonarr_url: "https://SONARR_URL",
 		radarr_url: "https://RADARR_URL",
-		nzbget_url: "https://SABNZBD_URL",
+		nzbget_url: "https://NZBGET_URL",
 		//Automation software blocks [Row 2]
 		tvheadend_url: "https://TVHEADEND_URL",
 		bittorrent_url: "https://BITTORRENT_URL",
