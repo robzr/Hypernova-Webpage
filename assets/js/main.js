@@ -5,7 +5,7 @@ var config = {
 		status_enabled: true
 	},
 	status: {
-		url: "http://DIRECT_PLEX_SERVER_URL:32400/web/index.html",
+		url: "http://10.0.46.100:32400/web/index.html",
 		movies_num: "1200+",
 		tv_num: "200+",
 		anime_num: "50+",
@@ -13,13 +13,13 @@ var config = {
 	},
 	url: {
 		//Top splash blocks
-		plex_url: "https://app.plex.tv/",
+		plex_url: "https://10.0.46.100:32400/web/index.html",
 		requests_url: "https://REQUEST_URL",
-		tautulli_url: "https://TAUTULLI_URL",
+		tautulli_url: "http://10.0.46.100:8181/",
 		//Automation software blocks [Row 1]
-		sonarr_url: "https://SONARR_URL",
-		radarr_url: "https://RADARR_URL",
-		nzbget_url: "https://NZBGET_URL",
+		sonarr_url: "http://10.0.46.100:8989/",
+		radarr_url: "http://10.0.46.100:7878/",
+		nzbget_url: "http://10.0.46.100:6789/",
 		//Automation software blocks [Row 2]
 		tvheadend_url: "https://TVHEADEND_URL",
 		bittorrent_url: "https://BITTORRENT_URL",
