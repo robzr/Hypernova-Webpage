@@ -19,7 +19,7 @@ var config = {
 		//Automation software blocks [Row 1]
 		sonarr_url: "https://SONARR_URL",
 		radarr_url: "https://RADARR_URL",
-		sabnzbd_url: "https://SABNZBD_URL",
+		nzbget_url: "https://SABNZBD_URL",
 		//Automation software blocks [Row 2]
 		tvheadend_url: "https://TVHEADEND_URL",
 		bittorrent_url: "https://BITTORRENT_URL",
@@ -44,7 +44,7 @@ function updatePageData() {
 	//Update automation software blocks [Row 1]
 	document.getElementById("splash-link-sonarr").href = config.url.sonarr_url;
 	document.getElementById("splash-link-radarr").href = config.url.radarr_url;
-	document.getElementById("splash-link-sabnzbd").href = config.url.sabnzbd_url;
+	document.getElementById("splash-link-nzbget").href = config.url.nzbget_url;
 	//Update automation software blocks [Row 2]
 	document.getElementById("splash-link-bittorrent").href = config.url.bittorrent_url;
 	document.getElementById("splash-link-tvheadend").href = config.url.tvheadend_url;
